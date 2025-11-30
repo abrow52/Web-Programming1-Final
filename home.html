@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RYUG | Home</title>
+    <link href="bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-5.3.8-examples/carousel/carousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> RYUG |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sale.html">For Sale</a></li>
+                        <li class="nav-item"><a class="nav-link" href="discounts.html">Discounts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    </ul>
+                    <form class="d-flex" role="search" onsubmit="goToSearch(event)">
+                        <input class="form-control me-2" type="search" placeholder="Search" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                        width="100%"
+                        height="100%"
+                        fill="var(--bs-secondary-color)"
+                    ></rect>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Now Hiring!</h1>
+                            <p class="opacity-75">
+                                Click below for more information
+                            </p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#"><strong>Apply Today</strong></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill="var(--bs-secondary-color)"
+                  ></rect>
+                </svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Don't miss out on a discount!</h1>
+                            <p class="opacity-75">
+                                Visit the discounts page to get a code to use in store.
+                            </p>
+                            <p><a class="btn btn-lg btn-primary" href="discounts.html"><strong>Discounts &raquo;</strong></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container marketing">
+            <div class="text-center" id="new-items">
+                <h1>New Items</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="images/musicbox.png" class="rounded-circle item-img" width="140" height="140" alt="Lamp">
+
+                    <h2 class="fw-normal">Music Box</h2>
+                    <p>
+                        <a class="btn btn-secondary" href="sale.html">View details &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/teapot.png" class="rounded-circle item-img" width="140" height="140" alt="Lamp">
+
+                    <h2 class="fw-normal">Tea Pot</h2>
+                    <p>
+                        <a class="btn btn-secondary" href="sale.html">View details &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/ornament.png" class="rounded-circle item-img" width="140" height="140" alt="Lamp">
+
+                    <h2 class="fw-normal">Ornament</h2>
+                    <p>
+                        <a class="btn btn-secondary" href="sale.html">View details &raquo;</a>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider" />
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">What is RYUG?</h2>
+                    <p class="lead">
+                        RYUG stands for recycle your ugly gif and we're a type of thrift store. While that may seem a bit harsh one of our founders thought the name rather humourous. She also thought hearing its name would encourage people to donate (aka get rid of) gifts they
+                        don't want.
+                    </p>
+                    <p class="lead">We accept used gifts and will even buy unsed ones from you! </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="images/storeFront.png" alt="Getting Started" class="featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+            <div class="ad-container" id="ad-container1">
+                <button class="word-counter" onclick="countWords()">Get page word count!</button>
+                <div id="fake-ad1">
+                    <p>Stop by RYUG today to get 10% more on your ugly gift!</p>
+                    <button class="close-ad" onclick="hideAd()">x</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="ads.js"></script>
+    <script src="search.js"></script>
+    <script src="bootstrap-5.3.8-examples/assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm">
+    </script>
+</body>
+
+</html>

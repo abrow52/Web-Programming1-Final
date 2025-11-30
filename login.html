@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RYUG | Login</title>
+    <link href="bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-5.3.8-examples/sign-in/sign-in.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> RYUG |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sale.html">For Sale</a></li>
+                        <li class="nav-item"><a class="nav-link" href="discounts.html">Discounts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    </ul>
+                    <form class="d-flex" role="search" onsubmit="goToSearch(event)">
+                        <input class="form-control me-2" type="search" placeholder="Search" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="form-signin w-100 m-auto centering">
+        <form onsubmit="login(event)">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <p class="mt-2">
+                Recommended password: ryug25
+            </p>
+            <p id="loginError">Incorrect password. Please try again.</p>
+
+            <button class="btn btn-primary w-100 py-2" type="submit">
+              <strong>Sign in</strong>
+            </button>
+        </form>
+
+        <div class="ad-container" id="ad-container2">
+            <button class="word-counter" onclick="countWords()">Get page word count!</button>
+            <div id="fake-ad2">
+                <p>More RYUG stores are coming soon!</p>
+                <button class="close-ad" onclick="hideAd()">x</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="ads.js"></script>
+    <script src="search.js"></script>
+    <script src="login.js"></script>
+    <script src="bootstrap-5.3.8-examples/assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm">
+    </script>
+</body>
+
+</html>

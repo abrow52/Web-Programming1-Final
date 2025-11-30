@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RYUG | Discounts</title>
+    <link href="bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> RYUG |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sale.html">For Sale</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="discounts.html">Discounts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    </ul>
+                    <form class="d-flex" role="search" onsubmit="goToSearch(event)">
+                        <input class="form-control me-2" type="search" placeholder="Search" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="centering">
+        <h1 id="discount-head">Play a Game to get a Discount!</h1>
+        <h3>Click on a card to get a discount code to use in store!</h3>
+        <button class="play-game" onclick="showGame()">Press to Play</button>
+        <div class="cards"></div>
+
+        <div class="ad-container" id="ad-container3">
+            <button class="word-counter" onclick="countWords()">Get page word count!</button>
+            <div id="fake-ad3">
+                <p>Visit the For Sale page to see some of the items we have in store!</p>
+                <button class="close-ad" onclick="hideAd()">x</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="discounts.js"></script>
+    <script src="search.js"></script>
+    <script src="ads.js"></script>
+    <script src="bootstrap-5.3.8-examples/assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm">
+    </script>
+</body>
+
+</html>

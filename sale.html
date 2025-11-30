@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RYUG | Items for Sale</title>
+    <link href="bootstrap-5.3.8-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> RYUG |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="sale.html">For Sale</a></li>
+                        <li class="nav-item"><a class="nav-link" href="discounts.html">Discounts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    </ul>
+                    <form class="d-flex" role="search" onsubmit="event.preventDefault(); searchProducts();">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="centering sale-page">
+        <h2 id="fau-caption">Recycled Gifts for Sale in Store</h2>
+        <p id="noResults">Product not available.</p>
+        <div class="table-grid">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Keychain
+                            <hr>
+                            <a href="images/keychain.png"><img src="images/keychain.png" alt=""></a>
+                            <hr> $1.00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tea Pot
+                            <hr>
+                            <a href="images/teapot.png"><img src="images/teapot.png" alt=""></a>
+                            <hr> $7.50
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Music Box
+                            <hr>
+                            <img src="images/musicbox.png" alt="">
+                            <hr> $3.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Lamp
+                            <hr>
+                            <img src="images/lamp.png" alt="">
+                            <hr> $8.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ornament
+                            <hr>
+                            <img src="images/ornament.png" alt="">
+                            <hr> $4.75
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Slippers
+                            <hr>
+                            <img src="images/slippers.png" alt="">
+                            <hr> $5.00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Silverware Set
+                            <hr>
+                            <img src="images/silverware.png" alt="">
+                            <hr> $10.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Butter Dish
+                            <hr>
+                            <img src="images/butterdish.png" alt="">
+                            <hr> $2.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Snowglobe
+                            <hr>
+                            <img src="images/snowglobe.png" alt="">
+                            <hr> $9.99
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ad-container" id="ad-container1">
+            <button class="word-counter" onclick="countWords()">Get page word count!</button>
+            <div id="fake-ad1">
+                <p>Stop by RYUG today to get 10% more on your ugly gift!</p>
+                <button class="close-ad" onclick="hideAd()">x</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+    </footer>
+    <script src="ads.js"></script>
+    <script src="search.js"></script>
+    <script src="bootstrap-5.3.8-examples/assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm">
+    </script>
+</body>
+
+</html>
