@@ -263,11 +263,6 @@ img {
     flex-grow: 1;
 }
 
-/* Discounts  */
-/* #discount-head {
-    padding-top: 40px;
-} */
-
 #discount-intructions{
     display: grid;
     justify-items: center;
@@ -368,21 +363,6 @@ img {
     margin-bottom: -30px;
     margin-top: 10px;
 }
-
-/* .vids {
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    row-gap: 50px;
-    column-gap: 100px;
-    justify-content: center;
-    align-content: center;
-}
-
-.vids video {
-    width: 500px;
-    height: 300px;
-    transform: scale(1.1);
-} */
 
 .vids {
     display: grid;
