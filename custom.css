@@ -389,6 +389,29 @@ footer{
     font-family: sans-serif;
 }
 
+.rating-container {
+    display: flex;
+    direction: rtl; /* Highest star on left */
+}
+
+.star {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: var(--accent-color);
+}
+
+.star:focus {
+    outline: none;
+}
+
 /* Meida */
 @media (max-width: 900px) {
     .table-grid table tbody {
