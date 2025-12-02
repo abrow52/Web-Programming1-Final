@@ -34,7 +34,7 @@
     </header>
     <main class="centering">
         <div id="discount-intructions">
-            <h1>Play a Game to get a Discount!</h1>
+            <h1 id="discount-head">Play a Game to get a Discount!</h1>
             <h3>Click on a card to get a discount code to use in store!</h3>
             <button class="play-game" onclick="showGame()">Press to Play</button>
         </div>
@@ -81,7 +81,19 @@
             <p class="mb-0">&copy; 2025 RYUG.</p>
             <a href="#" id="back-up" class="text-light">Back to top</a>
         </div>
-        </footer>
+        <form class="d-flex flex-wrap justify-content-center align-items-center " method="post" action="http://www.randyconnolly.com/tests/process.php">
+            <div class="rating-row d-flex align-items-center">
+                <p class="mb-0 me-2">Leave a rating: </p>
+                <div class="rating-container">
+                <button name="rating" value="5" class="star">&#9733;</button>
+                <button name="rating" value="4" class="star">&#9733;</button>
+                <button name="rating" value="3" class="star">&#9733;</button>
+                <button name="rating" value="2" class="star">&#9733;</button>
+                <button name="rating" value="1" class="star">&#9733;</button>
+                </div>
+            </div>
+        </form>
+    </footer>
     <script src="discounts.js"></script>
     <script src="search.js"></script>
     <script src="ads.js"></script>
