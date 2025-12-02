@@ -400,8 +400,8 @@ footer{
     }
 
     .card {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
     .cards {
         column-gap: 30px;
@@ -421,6 +421,6 @@ footer{
     }
 
     .vids video{
-        transform: scale(0.75);
+        transform: scale(0.5);
     }
 }
