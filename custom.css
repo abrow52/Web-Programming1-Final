@@ -421,6 +421,6 @@ footer{
     }
 
     .vids video{
-        transform: scale(0.9);
+        transform: scale(0.75);
     }
 }
