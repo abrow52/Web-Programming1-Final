@@ -264,9 +264,9 @@ img {
 }
 
 /* Discounts  */
-#discount-head {
+/* #discount-head {
     padding-top: 40px;
-}
+} */
 
 #discount-intructions{
     display: grid;
@@ -369,7 +369,7 @@ img {
     margin-top: 10px;
 }
 
-.vids {
+/* .vids {
     display: grid;
     grid-template-columns: repeat(2, 500px);
     row-gap: 50px;
@@ -382,7 +382,23 @@ img {
     width: 500px;
     height: 300px;
     transform: scale(1.1);
+} */
+
+.vids {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    width: 100%;
+    padding: 20px;
 }
+
+.vids video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
 
 footer{
     background-color: var(--primary-color);
@@ -400,8 +416,8 @@ footer{
     }
 
     .card {
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
     }
     .cards {
         column-gap: 30px;
@@ -421,6 +437,6 @@ footer{
     }
 
     .vids video{
-        transform: scale(0.5);
+        max-width: 100%;
     }
 }
