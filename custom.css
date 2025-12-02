@@ -16,8 +16,8 @@
 }
 
 body {
-    padding-bottom: 20px;
     padding-top: 50px;
+    padding-bottom: 0px;
 }
 
 .centering {
@@ -31,7 +31,6 @@ body {
 .navbar {
     margin-bottom: 20px;
     background-color: var(--primary-color);
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  */
 }
 
 .navbar-brand {
@@ -77,13 +76,13 @@ a[aria-current="page"] {
 
 #ad-container2 {
     position: fixed;
-    top: 90px;
+    top: 150px;
     left: 20px;
 }
 
 #ad-container3 {
     position: fixed;
-    bottom: 30px;
+    bottom: 60px;
     left: 20px;
 }
 
@@ -150,7 +149,6 @@ a[aria-current="page"] {
 .mt-2 {
     color: gray;
     font-size: 0.9em;
-    /* font-family: Haettenschweiler; */
 }
 
 /* Home  */
@@ -163,7 +161,6 @@ a[aria-current="page"] {
 #myCarousel .carousel-item {
     object-fit: cover;
     height: 300px;
-    /* background-color: var(--accent-color); */
 }
 
 #new-items {
@@ -271,6 +268,12 @@ img {
     padding-top: 40px;
 }
 
+#discount-intructions{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -367,29 +370,57 @@ img {
 }
 
 .vids {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    row-gap: 50px;
+    column-gap: 100px;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-bottom: 30px;
+    align-content: center;
 }
 
 .vids video {
-    width: 40%;
-    max-height: 75%;
+    width: 500px;
+    height: 300px;
+    transform: scale(1.1);
 }
 
+footer{
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.footer-item{
+    font-family: sans-serif;
+}
 
 /* Meida */
 @media (max-width: 900px) {
     .table-grid table tbody {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .card {
+        width: 120px;
+        height: 120px;
+    }
+    .cards {
+        column-gap: 30px;
+        row-gap: 25px;
+    }
+}
+
+@media (max-width: 1300px){
+    .vids{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
     .table-grid table tbody {
         grid-template-columns: 1fr;
+    }
+
+    .vids video{
+        transform: scale(0.9);
     }
 }
